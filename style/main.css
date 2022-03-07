@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Terminus;
+    src: url(Terminus.ttf);
+}
+
+body {
+    background-color: rgb(2, 0, 2);
+    font-family: Terminus;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* short for stupid margin fix thing */
+
+.smft {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#container {
+    text-align: center;
+    color: #dddddd;
+    margin: auto;
+    width: 760px;
+}
+
+.logo-header {
+    color: #dddddd;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.028em;
+}
+
+.page-navigation {
+    border: solid 1px #4b5a9b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    padding: 3px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right-text {
+    float: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+li {
+    display: inline;
+}
+
+.page-navigation a {
+    padding: 7px;
+    padding-bottom: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: solid 1px #4b5a9b;
+    border-bottom: none;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.page-navigation a.selected {
+    border-bottom: solid 3px rgb(2, 0, 2);
+    padding-bottom: 3px;
+}
+
+.page-navigation a.donate {
+    color: #ca6060
+}
+
+.page-navigation a.donate:hover {
+    color: #4960c9
+}
+
+#page-header-table {
+    text-align: center;
+    color: #dddddd;
+    margin: auto;
+    width: 593px;
+}
+
+#page-header-table table {
+    border: 1px solid #603a79;
+    width: 200px;
+    text-align: left;
+}
+
+#page-header-table th {
+    border-bottom: 1px solid #ca6060;
+    padding-bottom: 5px;
+}
+
+.page-header-hr {
+    border: 1px solid #603a79;
+}
+
+.parent {
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 4 / 1 / 2 / 4;
+}
+
+.div2 {
+    grid-area: 3 / 3 / 3 / 7;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(9, 9, 9);
+    width: 100%;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-right-text {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+/* About page */
+
+.grid-container {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 0px 25px;
+    grid-template-areas: "x m r" "n o w" ". . .";
+}
+
+.x {
+    grid-area: x;
+    border-right: solid 1px #603a79;
+}
+
+.m {
+    grid-area: m;
+    border-right: solid 1px #603a79;
+    width: 235.667px;
+    padding-right: 20px;
+}
+
+.r {
+    grid-area: r;
+}
+
+.n {
+    grid-area: n;
+}
+
+.o {
+    grid-area: o;
+}
+
+.w {
+    grid-area: w;
+}
+
+
+/* Donation page */
+
+#container-donate table,
+th,
+td {
+    font-size: 12px;
+}
+
+#container-donate table {
+    border: 1px solid #a486d19f;
+    width: 200px;
+    text-align: left;
+}
+
+#container-donate th {
+    border-bottom: 1px solid rgba(160, 160, 255, 0.63);
+    border-width: 1px;
+}
+
+#container-donate {
+    text-align: center;
+    color: #dddddd;
+    margin: auto;
+    width: 593px;
+    padding: 10px;
+}
+
+.donate-leaderboard-info {
+    float: right;
+}
+
+.donate-hr {
+    width: 100%;
+}
